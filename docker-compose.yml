@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  database:
+    image: bitnami/postgresql
+    restart: always
+    environment:
+      POSTGRESQL_DATABASE: ead-notification
+      POSTGRESQL_PASSWORD: adminnotification
+    ports:
+      - 5430:5430
